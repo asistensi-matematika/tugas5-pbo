@@ -5,6 +5,10 @@ NAMA: `isi nama disini`
 NRP: `isi nrp disini`
 
 ## Deskripsi Tugas
+Buatlah UML diagram sesuai dengan class, object, method dan property yang kamu buat, sebagai referensi untuk memulai:
+
+<center><img src="img/contoh_uml.png"></img></center>
+
 Inisiasi sebuah array buku, yang bernama perpustakaan secara langsung mempunyai 3 buah buku yang ditentukan secara random.
   - yang di random adalah: jenis buku
   - judul dan pengarang bebas
@@ -41,8 +45,8 @@ Rata-rata halaman Buku Non Fiksi dalam perpustakaan: _
 Standar deviasi halaman Buku Non Fiksi dalam perpustakaan: _
 ================================================================================================
 ```
-
-jika user memilih 1:
+---
+## jika user memilih 1:
 ```
 ================================================================================================
  ____            __                  ____
@@ -66,7 +70,9 @@ dengan catatan:
 - judul buku harus string, jika bukan string maka kembali ke menu awal
 - jumlah halaman buku harus int, jika bukan int maka kembali ke menu awal
 
-jika user memilih 2:
+---
+
+## jika user memilih 2:
 ```
 ================================================================================================
  __  __     ______     ______   __  __     ______        ______     __  __     __  __     __  __
@@ -84,7 +90,9 @@ Pilih buku yang akan diubah:
 ```
 jika buku sudah terpilih maka kembali ke menu "Buku Baru"
 
-jika user memilih 3:
+---
+
+## jika user memilih 3:
 
 ```
 ================================================================================================
@@ -97,12 +105,17 @@ jika user memilih 3:
 ================================================================================================
 
 Pilih buku yang akan dihapus:
-1. buku_1 | pengarang_1
-2. buku_2 | pengarang_2
-3. buku_3 | pengarang_3
+[1] buku_1 | pengarang_1
+[2] buku_2 | pengarang_2
+[3] buku_3 | pengarang_3
 ```
+---
 
+**untuk melihat cara print banner, ke [info](info.md)**
 
+hanya sebagai hiasan saja, jika bisa print-nya, ya bagus, jika tidak bisa diganti text biasa tidak apa-apa, silahkan dihias menurut kreativitas masing-masing individu
+
+---
 ## extra mile
 - simpanlah kumpulan array dalam sebuah file `.txt` dengan format:
   ```
@@ -119,8 +132,12 @@ Pilih buku yang akan dihapus:
 
 
 
-## hasil
+## Hasil
 buatlah sebuah demo video yang merekam semua case (menambah, mengedit, menghapus buku, serta seluruh error handlingnya (jika ada)), upload ke youtube dan sertakan linknya [disini](INSERT_YOUTUBE_URL_HERE)
+![](SERTAKAN_GAMBARNYA_DISINI)
 
 ## Upload
 upload seluruh folder project java-nya ke repository ini
+
+## frequently asked question
+[dilihat disini](info.md)
