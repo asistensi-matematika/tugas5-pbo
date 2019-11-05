@@ -1,4 +1,4 @@
-# TUGAS 4 ASISTENSI PBO - Jumat, 11 Oktober 2019
+# TUGAS 5 ASISTENSI PBO - Jumat, 1 November 2019
 
 NAMA: `isi nama disini`
 
@@ -84,9 +84,9 @@ dengan catatan:
 ================================================================================================
 
 Pilih buku yang akan diubah:
-1. buku_1 | pengarang_1
-2. buku_2 | pengarang_2
-3. buku_3 | pengarang_3
+[1] buku_1 | pengarang_1
+[2] buku_2 | pengarang_2
+[3] buku_3 | pengarang_3
 ```
 jika buku sudah terpilih maka kembali ke menu "Buku Baru"
 
