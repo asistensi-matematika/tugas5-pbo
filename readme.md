@@ -1,63 +1,126 @@
-# TODO: 
-- ubah jadi cuman garasi aja
-- bikin menu yang while True terus: 
-    - kondisi stop sampe user input stop
-- **bikin cli**
+# TUGAS 4 ASISTENSI PBO - Jumat, 11 Oktober 2019
 
+NAMA: `isi nama disini`
 
-
-
-
-
-
-
-# TUGAS 5 ASISTENSI PBO - Jumat, 1 November 2019
-
-NAMA_KELOMPOK: `isi nama kelompok disini`
-
-ANGGOTA KELOMPOK:
-  - `namaAnggota1` - `nrpAnggota1`
-  - `namaAnggota2` - `nrpAnggota2`
-  - `namaAnggota3` - `nrpAnggota3`
+NRP: `isi nrp disini`
 
 ## Deskripsi Tugas
-- bentuklah kelompok beranggotakan 3 orang, dan mempunyai nama kelompok
-- buatlah sebuah bank yang mempunyai 2 tipe nasabah
-  - checking account
-    - id
-    - nama
-    - saldo
-    - tipe account
-  - savings account
-    - saldo = saldo_checkingAccount * hari_terlewati * rate
-    - @Override tipe account
+Inisiasi sebuah array buku, yang bernama perpustakaan secara langsung mempunyai 3 buah buku yang ditentukan secara random.
+  - yang di random adalah: jenis buku
+  - judul dan pengarang bebas
 
-- buatlah presentasi yang menjelaskan implementasi soal
-  - kejelasan implementasi adalah kunci
-  - lebih simpel lebih baik
+Lalu sebuah command line interface sebuah pada programnya yang mempunyai opsi:
+```
+================================================================================================
+ ____    ____    ____    ____    __  __  ____    ______  ______  __  __   ______  ______  __  __
+/\  _`\ /\  _`\ /\  _`\ /\  _`\ /\ \/\ \/\  _`\ /\__  _\/\  _  \/\ \/\ \ /\  _  \/\  _  \/\ \/\ \
+\ \ \L\ \ \ \L\_\ \ \L\ \ \ \L\ \ \ \ \ \ \,\L\_\/_/\ \/\ \ \L\ \ \ \/'/'\ \ \L\ \ \ \L\ \ \ `\\ \
+ \ \ ,__/\ \  _\L\ \ ,  /\ \ ,__/\ \ \ \ \/_\__ \  \ \ \ \ \  __ \ \ , <  \ \  __ \ \  __ \ \ , ` \
+  \ \ \/  \ \ \L\ \ \ \\ \\ \ \/  \ \ \_\ \/\ \L\ \ \ \ \ \ \ \/\ \ \ \\`\ \ \ \/\ \ \ \/\ \ \ \`\ \
+   \ \_\   \ \____/\ \_\ \_\ \_\   \ \_____\ `\____\ \ \_\ \ \_\ \_\ \_\ \_\\ \_\ \_\ \_\ \_\ \_\ \_\
+    \/_/    \/___/  \/_/\/ /\/_/    \/_____/\/_____/  \/_/  \/_/\/_/\/_/\/_/ \/_/\/_/\/_/\/_/\/_/\/_/
 
-## Soal
-- buatlah sebuah bank bertipe array, yang mempunyai 1000 nasabah, dimana tiap nasabah pasti mempunyai checking account, dan tidak semua nasabah mempunyai savings account.
-  - penentuan nasabah yang mempunyai atau tidak mempunyai savings accoutn dapat ditentukan secara random.
-  - saldo minimal nasabah adalah 500000
-  - tidak ada nasabah yang mempunyai saldo lebih dari 1000000
-- buatlah sebuah class `Laporan` yang mempunyai argumen array `Bank` dan method untuk menghitung,:
-  - nasabah dengan jumlah tabungan terbanyak
-    - id
-    - nama
-    - saldo
-  - nasabah dengan jumlah tabungan paling sedikit
-    - id
-    - nama
-    - saldo
-  - rata-rata jumlah tabungan nasabah
-  - varians jumlah tabungan seluruh nasabah
-  - print seluruh detail di atas
+================================================================================================
 
-dimana 420 hari sudah dilewati.
+[1]. input buku baru
+[2]. modifikisi detail buku
+[3]. hapus buku
+[0]. EXIT
 
-## Screenshot hasil
-masukkan screenshot output disini
+================================================================================================
+Jumlah buku di dalam perpustakaan: _
+Rata-rata halaman buku dalam perpustakaan: _
+Standar deviasi halaman buku dalam perpustakaan: _
+================================================================================================
+Jumlah Buku Fiksi dalam perpustakaan: _
+Rata-rata halaman Buku Fiksi dalam perpustakaan: _
+Standar deviasi halaman Buku Fiksi dalam perpustakaan: _
+================================================================================================
+Jumlah Buku Non Fiksi dalam perpustakaan : _
+Rata-rata halaman Buku Non Fiksi dalam perpustakaan: _
+Standar deviasi halaman Buku Non Fiksi dalam perpustakaan: _
+================================================================================================
+```
+
+jika user memilih 1:
+```
+================================================================================================
+ ____            __                  ____
+/\  _`\         /\ \                /\  _`\
+\ \ \L\ \  __  _\ \ \/'\   __  __   \ \ \L\ \     __    _ __   __  __
+ \ \  _ <'/\ \/\ \ \ , <  /\ \/\ \   \ \  _ <'  /'__`\ /\`'__\/\ \/\ \
+  \ \ \L\ \ \ \_\ \ \ \\`\\ \ \_\ \   \ \ \L\ \/\ \L\.\\ \ \/ \ \ \_\ \
+   \ \____/\ \____/\ \_\ \_\ \____/    \ \____/\ \__/.\_\ \_\  \ \____/
+    \/___/  \/___/  \/_/\/_/\/___/      \/___/  \/__/\/_/\/_/   \/___/
+
+================================================================================================
+
+input judul buku:
+>
+input pengarang buku:
+>
+input jumlah halaman buku:
+>
+```
+dengan catatan:
+- judul buku harus string, jika bukan string maka kembali ke menu awal
+- jumlah halaman buku harus int, jika bukan int maka kembali ke menu awal
+
+jika user memilih 2:
+```
+================================================================================================
+ __  __     ______     ______   __  __     ______        ______     __  __     __  __     __  __
+/\ \_\ \   /\  __ \   /\  == \ /\ \/\ \   /\  ___\      /\  == \   /\ \/\ \   /\ \/ /    /\ \/\ \
+\ \  __ \  \ \  __ \  \ \  _-/ \ \ \_\ \  \ \___  \     \ \  __<   \ \ \_\ \  \ \  _"-.  \ \ \_\ \
+ \ \_\ \_\  \ \_\ \_\  \ \_\    \ \_____\  \/\_____\     \ \_____\  \ \_____\  \ \_\ \_\  \ \_____\
+  \/_/\/_/   \/_/\/_/   \/_/     \/_____/   \/_____/      \/_____/   \/_____/   \/_/\/_/   \/_____/
+
+================================================================================================
+
+Pilih buku yang akan diubah:
+1. buku_1 | pengarang_1
+2. buku_2 | pengarang_2
+3. buku_3 | pengarang_3
+```
+jika buku sudah terpilih maka kembali ke menu "Buku Baru"
+
+jika user memilih 3:
+
+```
+================================================================================================
+ __  __     ______     ______     __  __        ______     __  __     __  __     __  __
+/\ \/\ \   /\  == \   /\  __ \   /\ \_\ \      /\  == \   /\ \/\ \   /\ \/ /    /\ \/\ \
+\ \ \_\ \  \ \  __<   \ \  __ \  \ \  __ \     \ \  __<   \ \ \_\ \  \ \  _"-.  \ \ \_\ \
+ \ \_____\  \ \_____\  \ \_\ \_\  \ \_\ \_\     \ \_____\  \ \_____\  \ \_\ \_\  \ \_____\
+  \/_____/   \/_____/   \/_/\/_/   \/_/\/_/      \/_____/   \/_____/   \/_/\/_/   \/_____/
+
+================================================================================================
+
+Pilih buku yang akan dihapus:
+1. buku_1 | pengarang_1
+2. buku_2 | pengarang_2
+3. buku_3 | pengarang_3
+```
+
+
+## extra mile
+- simpanlah kumpulan array dalam sebuah file `.txt` dengan format:
+  ```
+  "judul_buku"      : ____,
+  "pengarang"       : ____,
+  "jumlah_halaman"  : ____,
+  "jenis_buku"      : "fiksi"/"non_fiksi"
+  ```
+  pada tiap buku, liat contohnya [disini](sample.txt)
+
+
+- buatlah error handling dimana yang menurut saudara cocok untuk di handle.
+  - semakin tercover semua error casenya, semakin baik (the more, the merrier 🤭)
+
+
+
+## hasil
+buatlah sebuah demo video yang merekam semua case (menambah, mengedit, menghapus buku, serta seluruh error handlingnya (jika ada)), upload ke youtube dan sertakan linknya [disini](INSERT_YOUTUBE_URL_HERE)
 
 ## Upload
-upload seluruh **FOLDER** project java-nya ke repository ini, beserta presentasi yang berbentuk pdf.
+upload seluruh folder project java-nya ke repository ini
